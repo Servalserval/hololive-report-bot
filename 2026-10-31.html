@@ -1,0 +1,132 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>順天時報 hololive版 2026年10月31日</title><style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbfbf9; --paper:#fff; --ink:#1a1a1a; --ink-2:#4a4a4a; --dim:#767676;
+  --rule:#e0ddd6; --rule-strong:#1a1a1a;
+  --accent:#b3261e; --accent-soft:#fdf3f2;
+  --lv1:#1f7a3d; --lv2:#b8860b; --lv3:#d2691e; --lv4:#b3261e;
+  --up:#b3261e; --down:#1f7a3d;
+  --serif:"Noto Serif TC","Songti TC","PingFang TC",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",
+         "Microsoft JhengHei",Roboto,Helvetica,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12120f; --paper:#1a1a17; --ink:#eceae4; --ink-2:#c4c1b8; --dim:#8f8c85;
+  --rule:#32312c; --rule-strong:#eceae4;
+  --accent:#e8564c; --accent-soft:#2a1815;
+  --lv1:#4ea96b; --lv2:#d4a72c; --lv3:#e8863f; --lv4:#e8564c;
+  --up:#e8564c; --down:#4ea96b;
+}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.7;
+  padding:0 20px 60px;max-width:1080px;margin-inline:auto}
+a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+p{margin:0 0 .85em}
+
+/* ── 報頭 ───────────────────────────────────────── */
+.masthead{border-bottom:3px double var(--rule-strong);padding:28px 0 14px;margin-bottom:6px}
+.masthead h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3.2rem);
+  font-weight:800;letter-spacing:.06em;margin:0;line-height:1.05}
+.masthead .kicker{font-family:var(--sans);font-size:.7rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:8px}
+.dateline{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;
+  border-bottom:1px solid var(--rule);padding:8px 0 10px;margin-bottom:26px;
+  font-size:.76rem;letter-spacing:.06em;color:var(--dim);text-transform:uppercase}
+.dateline b{color:var(--ink);font-weight:700}
+
+/* ── 通欄標題 ───────────────────────────────────── */
+.section-head{font-family:var(--sans);font-size:.72rem;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--accent);
+  border-top:2px solid var(--rule-strong);padding-top:8px;margin:42px 0 18px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.section-head .sub{font-weight:400;letter-spacing:.04em;color:var(--dim);
+  text-transform:none;font-size:.74rem}
+
+/* ── 頭條 ───────────────────────────────────────── */
+.lead{border-bottom:1px solid var(--rule);padding-bottom:26px;margin-bottom:26px}
+.lead h2{font-family:var(--serif);font-size:clamp(1.5rem,4.2vw,2.3rem);
+  line-height:1.22;font-weight:800;margin:.1em 0 .35em;letter-spacing:-.01em}
+.lead .standfirst{font-size:1.04rem;color:var(--ink-2);line-height:1.72;
+  max-width:62ch}
+.byline{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:6px;display:flex;gap:10px;align-items:center;
+  flex-wrap:wrap}
+
+/* ── 報導欄位 ───────────────────────────────────── */
+.grid{display:grid;gap:28px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.grid.two,.grid.three{grid-template-columns:1fr}}
+
+article.story{border-top:1px solid var(--rule);padding-top:14px}
+article.story h3{font-family:var(--serif);font-size:1.18rem;line-height:1.32;
+  font-weight:700;margin:.2em 0 .4em}
+article.story.big h3{font-size:1.5rem}
+article.story p{font-size:.94rem;color:var(--ink-2)}
+article.story .meta{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+/* 等級標記 —— 取代原本的 emoji,用報紙的旗標做法 */
+.flag{display:inline-block;font-size:.64rem;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;
+  border-radius:2px;white-space:nowrap}
+.flag.l1,.flag.calm{color:var(--lv1)}
+.flag.l2,.flag.watch{color:var(--lv2)}
+.flag.l3,.flag.spike{color:var(--lv3)}
+.flag.l4,.flag.call{color:var(--lv4);background:var(--accent-soft)}
+
+/* ── 數據區塊 ───────────────────────────────────── */
+.figure{background:var(--paper);border:1px solid var(--rule);padding:14px 16px;
+  margin:16px 0}
+.figure .cap{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:8px;font-weight:700}
+.stat-row{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:flex-end}
+.stat{display:flex;flex-direction:column;gap:1px}
+.stat .k{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.stat .v{font-family:var(--mono);font-size:1.5rem;font-weight:700;line-height:1.1}
+.stat .v.sm{font-size:1.05rem}
+.delta{font-family:var(--mono);font-size:.78rem;font-weight:700}
+.delta.up{color:var(--up)} .delta.down{color:var(--down)} .delta.flat{color:var(--dim)}
+
+/* ── 表格 ───────────────────────────────────────── */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:460px}
+thead th{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--dim);font-weight:800;text-align:left;
+  border-bottom:2px solid var(--rule-strong);padding:6px 10px}
+td{padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+tr.group td{background:var(--paper);font-weight:700;border-bottom:1px solid var(--rule-strong)}
+tr.hl td{background:var(--accent-soft)}
+
+/* ── 引文 / 觀點 ────────────────────────────────── */
+.pullquote{font-family:var(--serif);font-size:1.16rem;line-height:1.5;
+  border-left:3px solid var(--accent);padding:2px 0 2px 18px;margin:18px 0;
+  color:var(--ink)}
+.pullquote .attr{display:block;font-family:var(--sans);font-size:.74rem;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+
+/* ── 邊欄清單 ───────────────────────────────────── */
+.briefs{list-style:none;padding:0;margin:0}
+.briefs li{border-bottom:1px solid var(--rule);padding:9px 0;font-size:.9rem}
+.briefs li:last-child{border-bottom:0}
+.briefs .when{font-family:var(--mono);font-size:.72rem;color:var(--dim);margin-right:6px}
+.briefs .why{display:block;color:var(--dim);font-size:.82rem;margin-top:2px}
+
+.note{font-size:.76rem;color:var(--dim);line-height:1.6;margin-top:8px;
+  padding-left:10px;border-left:2px solid var(--rule)}
+.dim{color:var(--dim)}
+.nowrap{white-space:nowrap}
+
+footer{border-top:3px double var(--rule-strong);margin-top:52px;padding-top:16px;
+  font-size:.74rem;color:var(--dim);line-height:1.7}
+
+@media (max-width:560px){
+  body{padding:0 14px 40px;font-size:15px}
+  .masthead{padding-top:20px}
+  .stat .v{font-size:1.25rem}
+}
+</style></head><body><header class="masthead"><div class="kicker">轟はじめ · ReGLOSS · 台灣活動</div><h1>順天時報 hololive版</h1></header><div class="dateline"><span>發布 <b>2026年10月31日 11:04(台北)</b></span><span>直播預訂 <b>0 筆</b></span><span>応援広告 <b>28 則</b></span><span>本輪成本 <b>$0.2005</b></span></div><div class="section-head"><span>今日頭條</span><span class="sub">過去 24 小時的全局大事</span></div><ul class="briefs"><li><span class="flag spike">值得注意</span> <b>hololive官方原宿店空間再現顯示屏11月13日翻新</b> <a href="https://hololivepro.com/news" target="_blank" rel="noopener">[源]</a><br>官方宣布原宿店空間再現顯示屏將於2026年11月13日翻新，新增4部新作影像，全16種模式；同步推出附原創透明書籤的觀看券（1100日圓稅込）開始販售。<span class="why">官方商店體驗升級，粉絲可欣賞更多hololive內容，對全球粉絲與台灣訪日粉絲具吸引力。</span></li><li><span class="flag spike">值得注意</span> <b>COVER推出新生活風格品牌「hololive – holoSynQ」</b> <a href="https://prtimes.jp/main/html/rd/p/000001281.000030268.html" target="_blank" rel="noopener">[源]</a><br>與MN Inter-Fashion合作推出全新服飾生活風格品牌「hololive – holoSynQ」，首波以FLOW GLOW為主題；11月6日起於東京東急プラザ表參道Omokado舉辦快閃店。<span class="why">DEV_IS相關團體FLOW GLOW參與新品牌企劃，拓展VTuber文化至日常服飾，全球粉絲關注。</span></li><li><span class="flag spike">值得注意</span> <b>ReGLOSS儒烏風亭らでん與台灣左營燈會合作新企劃</b> <a href="https://x.com/hololive_En/status/2116002164359545287" target="_blank" rel="noopener">[源]</a><br>ReGLOSS成員Juufuutei Raden宣布與台灣「GOOD OLD LIVING FESTIVAL LIFE Zuoying in the Light」合作，11月5日特別直播，12月12日燈會登場。<span class="why">ReGLOSS成員直接參與台灣在地燈會活動，台灣粉絲可期待現場與直播互動，轟はじめ同團成員相關話題升溫。</span></li><li><span class="flag watch">一般</span> <b>「hololive Grand Reception」展覽後半段10月31日開幕</b> <a href="https://eeo.today/media/2026/10/20/404786/" target="_blank" rel="noopener">[源]</a><br>9周年紀念官方展覽前半10月10-28日結束，10月29-30日休館整備，後半段10月31日起至11月23日於東京有明TOKYO DREAM PARK繼續展出。<span class="why">展覽新階段開啟，粉絲可繼續參觀9周年特別內容，對全球與台灣粉絲具持續吸引力。</span></li><li><span class="flag watch">一般</span> <b>hololive 7th fes.延遲放映會10月31日香港澳門登場</b> <a href="https://hololive.hololivepro.com/en/news/" target="_blank" rel="noopener">[源]</a><br>Emperor Cinemas於10月31日在香港Times Square及澳門Lisboeta舉辦「hololive 7th fes. Ridin’ on Dream」延遲放映會，分多場次進行。<span class="why">大型演唱會延遲放映在港澳舉行，鄰近台灣粉絲可考慮前往觀看，hololive官方企劃持續推廣。</span></li><li><span class="flag watch">一般</span> <b>hololive English舉辦holoKitchen烹飪合作直播</b> <a href="https://x.com/hololive_En/status/2116349442219475151" target="_blank" rel="noopener">[源]</a><br>Mori Calliope、Nerissa Ravencroft、Hakos Baelz等成員參與離線烹飪合作直播，10月30-31日左右舉行，附日文YT字幕。<span class="why">多位EN成員參與趣味企劃，粉絲可觀看烹飪互動，增添hololive日常娛樂內容。</span></li></ul><div class="note">過去24小時以官方商店翻新、新品牌holoSynQ、ReGLOSS台灣合作等公告為主，無成員畢業或大型演唱會新訊。</div><div class="lead"><div class="byline"><span class="flag spike">值得注意</span><span>轟はじめ</span></div><h2>ReGLOSS成員與台灣左營燈會合作 轟はじめ同團動態受關注</h2><div class="figure"><div class="cap">直播預訂</div><p style="margin:0">目前沒有待機枠。</p><div class="note">這是正常的 —— 待機枠通常開台前數小時到數天才建立,不是系統抓不到。</div></div><p>過去24小時，ReGLOSS成員儒烏風亭らでん宣布與台灣左營燈會合作，11月5日特別直播、12月12日燈會登場，轟はじめ同團話題升溫。轟はじめ本人近期直播以雜談、FILA合作與遊戲為主，無新原創曲或演唱會消息。官方商店翻新與holoSynQ新品牌等hololive整體活動持續進行中，但與轟はじめ個人直接關聯有限。</p><ul class="briefs"><li><span class="flag l3">預告</span> ReGLOSS成員儒烏風亭らでん與台灣左營燈會合作企劃 <span class="dim">[台灣]</span> <a href="https://x.com/hololive_En/status/2116002164359545287" target="_blank" rel="noopener">▸</a><span class="why">2026年10月30日 UTC宣布，11月5日直播、12月12日燈會</span></li><li><span class="flag l1">已發生</span> 轟はじめ【雑談】FILAさんコラボ、インドネシアロケ、カラオケで本人登場とか直播 <span class="dim">[全球]</span> <a href="https://www.youtube.com/playlist?list=PLRpGD7OjwPS2nv4uHK4wUcuPYST2F7Bre" target="_blank" rel="noopener">▸</a><span class="why">2026年10月30日</span></li><li><span class="flag l1">已發生</span> 轟はじめ【密着】FILA×轟はじめコラボの裏側直播 <span class="dim">[全球]</span> <a href="https://www.youtube.com/playlist?list=PLRpGD7OjwPS2nv4uHK4wUcuPYST2F7Bre" target="_blank" rel="noopener">▸</a><span class="why">2026年10月30日</span></li><li><span class="flag l3">預告</span> hololive官方原宿店空間再現顯示屏11月13日翻新 <span class="dim">[日本]</span> <a href="https://hololivepro.com/news" target="_blank" rel="noopener">▸</a><span class="why">2026年10月30日 JST宣布，11月13日翻新</span></li></ul><div class="pullquote">ReGLOSS成員儒烏風亭らでん與台灣左營燈會合作，11月5日特別直播、12月12日燈會登場，轟はじめ同團台灣粉絲可期待相關互動。<span class="attr">🇹🇼 台灣</span></div><div class="section-head"><span>最近播過的</span></div><ul class="briefs"><li><span class="when">2026-10-30</span><a href="https://youtu.be/Ylk_iNsDRY4" target="_blank" rel="noopener">【雑談】FILAさんコラボ、インドネシアロケ、カラオケで本人登場とか【轟はじめ/ホロライブReGLOSS】</a></li><li><span class="when">2026-10-30</span><a href="https://youtu.be/L_qGRZZAQ5g" target="_blank" rel="noopener">【密着】FILA×轟はじめコラボの裏側に完全潜入!こだわり抜いたスニーカー&amp;ロゴ制作の全貌を公開!#FILABANCHO</a></li><li><span class="when">2026-10-29</span><a href="https://youtu.be/zo0B_AyhEzc" target="_blank" rel="noopener">【課金できた】水宮がでたんだからでるだろ!ガチャ!【轟はじめ/ホロライブReGLOSS】</a></li><li><span class="when">2026-10-26</span><a href="https://youtu.be/RowVkjl0zPY" target="_blank" rel="noopener">でびちゃんのオネンネ・ネンネ【轟はじめ】#shorts #vtuber</a></li><li><span class="when">2026-10-24</span><a href="https://youtu.be/dVcrPyhXzGA" target="_blank" rel="noopener">地図から存在を消された旧校舎「0号館」【轟はじめ/ホロライブReGLOSS】</a></li></ul></div><div class="section-head"><span>其他主題</span></div><div class="grid two"><article class="story"><div class="meta"><span class="flag spike">值得注意</span><span>hololive 台灣活動</span></div><h3>ReGLOSS儒烏風亭らでん合作台灣左營燈會 12月登場</h3><p>過去24小時hololive官方公布ReGLOSS成員儒烏風亭らでん與台灣左營燈會合作企劃，11月5日特別直播、12月12日燈會登場。台灣粉絲可期待現場與直播互動，轟はじめ同團話題升溫。其他全球商店翻新與新品牌holoSynQ快閃店公告同步發布，無台灣新快閃店或演唱會最新進展。</p><ul class="briefs"><li><span class="flag l3">預告</span> ReGLOSS儒烏風亭らでん與台灣「GOOD OLD LIVING FESTIVAL LIFE Zuoying in the Light」合作，11月5日特別直播、12月12日燈會登場 <span class="dim">[台灣]</span> <a href="https://x.com/hololive_En/status/2116002164359545287" target="_blank" rel="noopener">▸</a><span class="why">2026年10月30日 UTC 宣布，11月5日直播、12月12日燈會</span></li></ul><div class="pullquote">ReGLOSS成員儒烏風亭らでん直接參與台灣左營燈會合作，11月5日直播、12月12日登場，台灣粉絲可現場或直播參與。<span class="attr">🇹🇼 台灣</span></div></article><article class="story"><div class="meta"><span class="flag spike">值得注意</span><span>全球活動</span></div><h3>ReGLOSS成員合作台灣燈會 hololive展覽與新品牌同步更新</h3><p>過去24小時內，hololive官方公布多項已確認進展，包括原宿店顯示屏11月翻新與新品牌holoSynQ快閃店預告。ReGLOSS成員儒烏風亭らでん與台灣左營燈會合作消息曝光，11月特別直播與12月燈會將登場。hololive Grand Reception展覽後半段於今日10月31日開幕，港澳同步舉辦7th fes延遲放映會。</p><ul class="briefs"><li><span class="flag l3">預告</span> hololive官方原宿店空間再現顯示屏翻新，新增4部新作影像 <span class="dim">[日本]</span> <a href="https://hololivepro.com/news" target="_blank" rel="noopener">▸</a><span class="why">2026年11月13日</span></li><li><span class="flag l3">預告</span> COVER推出新生活風格品牌「hololive – holoSynQ」，首波FLOW GLOW主題快閃店 <span class="dim">[日本]</span> <a href="https://prtimes.jp/main/html/rd/p/000001281.000030268.html" target="_blank" rel="noopener">▸</a><span class="why">2026年11月6日起</span></li><li><span class="flag l3">預告</span> ReGLOSS儒烏風亭らでん與台灣左營燈會合作，11月5日特別直播 <span class="dim">[台灣]</span> <a href="https://x.com/hololive_En/status/2116002164359545287" target="_blank" rel="noopener">▸</a><span class="why">2026年11月5日</span></li><li><span class="flag l1">已發生</span> 「hololive Grand Reception」展覽後半段開幕 <span class="dim">[日本]</span> <a href="https://eeo.today/media/2026/10/20/404786/" target="_blank" rel="noopener">▸</a><span class="why">2026年10月31日</span></li><li><span class="flag l1">已發生</span> hololive 7th fes.延遲放映會於香港澳門登場 <span class="dim">[全球]</span> <a href="https://hololive.hololivepro.com/en/news/" target="_blank" rel="noopener">▸</a><span class="why">2026年10月31日</span></li></ul><div class="pullquote">ReGLOSS成員儒烏風亭らでん與台灣左營燈會「GOOD OLD LIVING FESTIVAL LIFE Zuoying in the Light」合作，12月12日燈會登場，台灣粉絲可關注11月5日特別直播。<span class="attr">🇹🇼 台灣</span></div></article><article class="story"><div class="meta"><span class="flag spike">值得注意</span><span>ReGLOSS / DEV_IS</span></div><h3>轟はじめFILA聯名今起開賣 らでん台灣燈會合作</h3><p>轟はじめFILA聯名商品於10月30日18:30起開放預購，包含球鞋、外套等四款，由本人參與設計。hololive Dreams遊戲新活動「屬於我們的 Halloween Fever！」已於10月29日登場，轟はじめ參與原創劇情與新曲。儒烏風亭らでん宣布與台灣左營燈會合作，11月5日特別直播、12月12日登場。</p><ul class="briefs"><li><span class="flag l1">已發生</span> 轟はじめ×FILA聯名商品開放預購 <span class="dim">[全球]</span> <a href="https://news.gamebase.com.tw/news/detail/99441799" target="_blank" rel="noopener">▸</a><span class="why">2026-10-30 18:30 JST起</span></li><li><span class="flag l2">進行中</span> hololive Dreams「屬於我們的 Halloween Fever！」活動登場 <span class="dim">[全球]</span> <a href="https://gnn.gamer.com.tw/detail.php?sn=314081" target="_blank" rel="noopener">▸</a><span class="why">2026-10-29起</span></li><li><span class="flag l3">預告</span> 儒烏風亭らでん與台灣左營燈會合作企劃 <span class="dim">[台灣]</span> <a href="https://x.com/hololive_En/status/2116002164359545287" target="_blank" rel="noopener">▸</a><span class="why">2026-11-05直播、12-12燈會</span></li><li><span class="flag l3">預告</span> holoSynQ品牌快閃店 FLOW GLOW主題 <span class="dim">[日本]</span> <a href="https://prtimes.jp/main/html/rd/p/000001281.000030268.html" target="_blank" rel="noopener">▸</a><span class="why">2026-11-06起</span></li></ul><div class="pullquote">儒烏風亭らでん與台灣左營燈會「GOOD OLD LIVING FESTIVAL LIFE Zuoying in the Light」合作，11月5日特別直播、12月12日登場，台灣粉絲可關注現場與直播。<span class="attr">🇹🇼 台灣</span></div><ul class="briefs"><li><span class="flag l1">官方</span> <a href="https://x.com/todoroki_hajime/status/2116002164359545287" target="_blank" rel="noopener">@轟はじめ🐧⚡ReGLOSS</a><span class="why">FILA聯名商品設計公開，10月30日開賣</span></li></ul></article><article class="story"><div class="meta"><span class="flag watch">常態</span><span>応援広告</span></div><h3>台北Gigi Murin生日巴士廣告今日結束</h3><p>過去24小時無新応援広告發布消息。台灣部分粉絲集資廣告仍持續進行中，包括Luna多站廣告與Gigi Murin台北巴士廣告。其他日本或海外廣告多為已結束或預告階段。</p><ul class="briefs"><li><span class="flag l2">進行中</span> ジジ・ムリン hololive Justice Gigi Murin 2026 Birthday Bus ラッピングバス広告 <span class="dim">[台灣]</span><span class="why">2026年10月1日～2026年10月31日</span></li><li><span class="flag l2">進行中</span> 姫森ルーナ 2026お誕生日記念 駅広告 <span class="dim">[台灣]</span><span class="why">2026年10月1日～2026年11月9日（台北駅等）</span></li><li><span class="flag l1">已發生</span> 夕刻ロベル 誕生日応援バス企画2026 高雄市公車 <span class="dim">[台灣]</span><span class="why">2026年9月23日～2026年10月22日</span></li></ul><div class="pullquote">台北Gigi Murin生日巴士廣告10/31結束；高雄Roberu巴士已於10/22結束；Luna廣告多站持續至11月，包含台北駅、梁才駅、LRT-1 United Nations Station等。<span class="attr">🇹🇼 台灣</span></div></article></div><div class="section-head"><span>🇹🇼 台灣的応援広告</span><span class="sub">3 則</span></div><div class="tablewrap"><table style="min-width:640px"><thead><tr><th>タレント</th><th>広告名</th><th>場所</th><th>主催者</th><th>期間</th></tr></thead><tbody><tr><td class="nowrap"><b>姫森ルーナ</b></td><td>姫森ルーナ２０２６お誕生日記念 広告</td><td class="nowrap">2026年10月1日 ~ 2026年10月28日 : 台北駅 2026年10月7日 ~ 2026年11月6日 : 梁才駅 2026年10月7日 ~ 2026年10月13日 : 秋葉原駅 2026年10月10日 ~ 2026年11月9日 : LRT-1 United Nations Station</td><td class="dim nowrap">GaHwaYang(ガワヤン)</td><td class="dim nowrap">2026年10月1日～2026年11月9日</td></tr><tr><td class="nowrap"><b>ジジ・ムリン</b></td><td>hololive Justice Gigi Murin 2026 Birthday Bus Advertisement Project</td><td class="nowrap">台北</td><td class="dim nowrap">Gigi Murin Support Project Team / Representative: まにがわ</td><td class="dim nowrap">2026年10月1日～2026年10月31日</td></tr><tr><td class="nowrap"><b>夕刻ロベル</b></td><td>夕刻ロベル誕生日応援バス企画2026</td><td class="nowrap">高雄市公車 100系統</td><td class="dim nowrap">すずか</td><td class="dim nowrap">2026年9月23日～2026年10月22日</td></tr></tbody></table></div><div class="section-head"><span>追蹤成員的応援広告</span><span class="sub">1 則</span></div><div class="tablewrap"><table style="min-width:640px"><thead><tr><th>タレント</th><th>広告名</th><th>場所</th><th>主催者</th><th>期間</th></tr></thead><tbody><tr><td class="nowrap"><b>轟はじめ</b></td><td>轟はじめデビュー1111日記念</td><td class="nowrap">東京メトロ 秋葉原駅</td><td class="dim nowrap">やたてぃ学園はじめラ部</td><td class="dim nowrap">2026年9月21日～2026年9月27日</td></tr></tbody></table></div><div class="section-head"><span>全部応援広告(節錄)</span><span class="sub">25 則</span></div><div class="tablewrap"><table style="min-width:640px"><thead><tr><th>タレント</th><th>広告名</th><th>場所</th><th>主催者</th><th>期間</th></tr></thead><tbody><tr><td class="nowrap"><b>さくらみこ</b></td><td>さくらみこ 2nd Live Blooming Parade!! 応援広告</td><td class="nowrap">横浜駅</td><td class="dim nowrap">Owl</td><td class="dim nowrap">2026年10月28日～2026年11月3日</td></tr><tr><td class="nowrap"><b>さくらみこ</b></td><td>さくらみこ応援企画</td><td class="nowrap">JR 横浜駅</td><td class="dim nowrap">しずえっち</td><td class="dim nowrap">2026年10月26日～2026年11月1日</td></tr><tr><td class="nowrap"><b>さくらみこ</b></td><td>さくらみこ2ndソロライブ開催記念応援広告</td><td class="nowrap">みなとみらい線 横浜駅</td><td class="dim nowrap">ミズキチ</td><td class="dim nowrap">2026年10月26日～2026年11月1日</td></tr><tr><td class="nowrap"><b>さくらみこ</b></td><td>さくらみこ 2nd Live 応援広告</td><td class="nowrap">東急東横線 横浜駅</td><td class="dim nowrap">ラク</td><td class="dim nowrap">2026年10月27日～2026年11月2日</td></tr><tr><td class="nowrap"><b>さくらみこ</b></td><td>さくらみこ さん2ndソロライブ応援広告企画</td><td class="nowrap">みなとみらい線 横浜駅</td><td class="dim nowrap">さくら組みこぴー企画</td><td class="dim nowrap">2026年10月26日～2026年11月1日</td></tr><tr><td class="nowrap"><b>さくらみこ</b></td><td>さくらみこ 2nd Live &quot;Blooming Parade!!&quot; 開催記念応援広告</td><td class="nowrap">Kアリーナ横浜 ポスターボックス</td><td class="dim nowrap">桜木咲</td><td class="dim nowrap">2026年10月29日～2026年10月29日</td></tr><tr><td class="nowrap"><b>律可</b></td><td>律可デビュー7周年企画</td><td class="nowrap">東京メトロ 池袋駅</td><td class="dim nowrap">みなだ</td><td class="dim nowrap">2026年10月14日～2026年10月20日</td></tr><tr><td class="nowrap"><b>星街すいせい</b></td><td>星街すいせい アリーナツアー開催記念</td><td class="nowrap">JR 三ノ宮駅前 M-INT Vision</td><td class="dim nowrap">彗星の輝きに導かれて</td><td class="dim nowrap">2026年10月21日～2026年10月21日</td></tr><tr><td class="nowrap"><b>白銀ノエル</b></td><td>白銀ノエル2026年誕生日お祝い広告</td><td class="nowrap">江南駅</td><td class="dim nowrap">泣くジョーカー</td><td class="dim nowrap">2026年10月30日～2026年11月30日</td></tr><tr><td class="nowrap"><b>白上フブキ</b></td><td>白上フブキ 誕生日記念応援広告</td><td class="nowrap">阿武隈急行線 福島駅～丸森駅間</td><td class="dim nowrap">とーよー快速</td><td class="dim nowrap">2026年10月25日～2026年10月25日</td></tr><tr><td class="nowrap"><b>ジジ・ムリン</b></td><td>ジジ・ムリン誕生日応援広告</td><td class="nowrap">クロス新宿ビジョン</td><td class="dim nowrap">Artmines</td><td class="dim nowrap">2026年10月19日～2026年10月25日</td></tr><tr><td class="nowrap"><b>ジジ・ムリン / セシリア・イマーグリーン</b></td><td>Autofister&#x27;s 2026 Celebration Advertisement</td><td class="nowrap">Kuala Lumpur</td><td class="dim nowrap">holoEncomium</td><td class="dim nowrap">2026年10月17日～2026年10月18日</td></tr><tr><td class="nowrap"><b>ジジ・ムリン</b></td><td>Gigi Murin Birthday Advertisement 2026</td><td class="nowrap">Bugis MRT Station</td><td class="dim nowrap">Angela, Buwuchi, ExoZe and JustNugz</td><td class="dim nowrap">2026年10月15日～2026年10月28日</td></tr><tr><td class="nowrap"><b>ジジ・ムリン</b></td><td>Gigi Murin誕生日記念広告</td><td class="nowrap">東京メトロ 秋葉原駅</td><td class="dim nowrap">さかな</td><td class="dim nowrap">2026年10月12日～2026年10月18日</td></tr><tr><td class="nowrap"><b>IRyS</b></td><td>IRySign</td><td class="nowrap">JR 秋葉原駅</td><td class="dim nowrap">HyunJa</td><td class="dim nowrap">2026年10月5日～2026年10月11日</td></tr><tr><td class="nowrap"><b>白上フブキ</b></td><td>白上フブキ誕生日記念広告2026</td><td class="nowrap">2026年10月5日 ~ 2026年10月11日 : 東京メトロ 秋葉原駅 / JR 博多駅 / JR 広島駅 / Osaka Metro 梅田駅 / JR 仙台駅 / JR 名古屋駅 2026年10月6日 ~ 2026年10月12日 : JR 小樽駅</td><td class="dim nowrap">白上フブキ応援企画</td><td class="dim nowrap">2026年10月5日～2026年10月12日</td></tr><tr><td class="nowrap"><b>ジュラルド・ティー・レクスフォード</b></td><td>Jurard Fan Support Pearl Shakes Cart</td><td class="nowrap">The SMX Convention Center Manila, Pasay City</td><td class="dim nowrap">Sorawrity</td><td class="dim nowrap">2026年10月3日～2026年10月3日</td></tr><tr><td class="nowrap"><b>オクタビオ</b></td><td>Octavio Fan Support Fries Cart</td><td class="nowrap">SMX Convention Center Manila, Pasay City</td><td class="dim nowrap">poppet</td><td class="dim nowrap">2026年10月3日～2026年10月3日</td></tr><tr><td class="nowrap"><b>IRyS</b></td><td>IRySign</td><td class="nowrap">りんかい線 国際展示場駅</td><td class="dim nowrap">HyunJa</td><td class="dim nowrap">2026年10月2日～2026年10月8日</td></tr><tr><td class="nowrap"><b>姫森ルーナ</b></td><td>姫森ルーナ２０２６お誕生日記念 広告</td><td class="nowrap">2026年10月1日 ~ 2026年10月28日 : 台北駅 2026年10月7日 ~ 2026年11月6日 : 梁才駅 2026年10月7日 ~ 2026年10月13日 : 秋葉原駅 2026年10月10日 ~ 2026年11月9日 : LRT-1 United Nations Station</td><td class="dim nowrap">GaHwaYang(ガワヤン)</td><td class="dim nowrap">2026年10月1日～2026年11月9日</td></tr><tr><td class="nowrap"><b>ジジ・ムリン</b></td><td>hololive Justice Gigi Murin 2026 Birthday Bus Advertisement Project</td><td class="nowrap">台北</td><td class="dim nowrap">Gigi Murin Support Project Team / Representative: まにがわ</td><td class="dim nowrap">2026年10月1日～2026年10月31日</td></tr><tr><td class="nowrap"><b>戌神ころね</b></td><td>戌神ころね誕生日お祝い広告</td><td class="nowrap">秋葉原駅</td><td class="dim nowrap">るり</td><td class="dim nowrap">2026年10月1日～2026年10月7日</td></tr><tr><td class="nowrap"><b>クレイジー・オリー</b></td><td>Kureiji Ollie&#x27;s 2026 Birthday Commemoration Video</td><td class="nowrap">秋葉原駅</td><td class="dim nowrap">Kureiji Ollie&#x27;s Fanproject Team</td><td class="dim nowrap">2026年10月1日～2026年10月31日</td></tr><tr><td class="nowrap"><b>IRyS</b></td><td>IRyS 1st Concert応援広告</td><td class="nowrap">2026年9月30日 ~ 2026年10月6日 : 東京メトロ 池袋駅 2026年10月1日 ~ 2026年10月7日 : りんかい線 国際展示場駅 2026年10月5日 ~ 2026年10月11日 : Osaka Metro なんば駅</td><td class="dim nowrap">IRyS応援企画 代表者:ゆあち</td><td class="dim nowrap">2026年9月30日～2026年10月11日</td></tr><tr><td class="nowrap"><b>白上フブキ</b></td><td>白上フブキ誕生日記念2026</td><td class="nowrap">東京メトロ 秋葉原駅</td><td class="dim nowrap">なっちゃん</td><td class="dim nowrap">2026年9月30日～2026年10月6日</td></tr></tbody></table></div><footer>由 holo-bot 自動產生 · Holodex(直播排程)· hololivepro.com 応援広告 · Grok(Venice API,含 X 搜尋)<br>Holodex 沒有排程推送的 WebSocket(那支 socket.io 是 TLdex 字幕中繼),所以採輪詢。待機枠通常提前數小時到數天開,不影響時效。</footer></body></html>
