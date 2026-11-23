@@ -1,0 +1,132 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>順天時報 hololive版 2026年11月23日</title><style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#fbfbf9; --paper:#fff; --ink:#1a1a1a; --ink-2:#4a4a4a; --dim:#767676;
+  --rule:#e0ddd6; --rule-strong:#1a1a1a;
+  --accent:#b3261e; --accent-soft:#fdf3f2;
+  --lv1:#1f7a3d; --lv2:#b8860b; --lv3:#d2691e; --lv4:#b3261e;
+  --up:#b3261e; --down:#1f7a3d;
+  --serif:"Noto Serif TC","Songti TC","PingFang TC",Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC",
+         "Microsoft JhengHei",Roboto,Helvetica,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12120f; --paper:#1a1a17; --ink:#eceae4; --ink-2:#c4c1b8; --dim:#8f8c85;
+  --rule:#32312c; --rule-strong:#eceae4;
+  --accent:#e8564c; --accent-soft:#2a1815;
+  --lv1:#4ea96b; --lv2:#d4a72c; --lv3:#e8863f; --lv4:#e8564c;
+  --up:#e8564c; --down:#4ea96b;
+}}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.7;
+  padding:0 20px 60px;max-width:1080px;margin-inline:auto}
+a{color:inherit;text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+p{margin:0 0 .85em}
+
+/* ── 報頭 ───────────────────────────────────────── */
+.masthead{border-bottom:3px double var(--rule-strong);padding:28px 0 14px;margin-bottom:6px}
+.masthead h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3.2rem);
+  font-weight:800;letter-spacing:.06em;margin:0;line-height:1.05}
+.masthead .kicker{font-family:var(--sans);font-size:.7rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:8px}
+.dateline{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:baseline;
+  border-bottom:1px solid var(--rule);padding:8px 0 10px;margin-bottom:26px;
+  font-size:.76rem;letter-spacing:.06em;color:var(--dim);text-transform:uppercase}
+.dateline b{color:var(--ink);font-weight:700}
+
+/* ── 通欄標題 ───────────────────────────────────── */
+.section-head{font-family:var(--sans);font-size:.72rem;font-weight:800;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--accent);
+  border-top:2px solid var(--rule-strong);padding-top:8px;margin:42px 0 18px;
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.section-head .sub{font-weight:400;letter-spacing:.04em;color:var(--dim);
+  text-transform:none;font-size:.74rem}
+
+/* ── 頭條 ───────────────────────────────────────── */
+.lead{border-bottom:1px solid var(--rule);padding-bottom:26px;margin-bottom:26px}
+.lead h2{font-family:var(--serif);font-size:clamp(1.5rem,4.2vw,2.3rem);
+  line-height:1.22;font-weight:800;margin:.1em 0 .35em;letter-spacing:-.01em}
+.lead .standfirst{font-size:1.04rem;color:var(--ink-2);line-height:1.72;
+  max-width:62ch}
+.byline{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:6px;display:flex;gap:10px;align-items:center;
+  flex-wrap:wrap}
+
+/* ── 報導欄位 ───────────────────────────────────── */
+.grid{display:grid;gap:28px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.grid.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:760px){.grid.two,.grid.three{grid-template-columns:1fr}}
+
+article.story{border-top:1px solid var(--rule);padding-top:14px}
+article.story h3{font-family:var(--serif);font-size:1.18rem;line-height:1.32;
+  font-weight:700;margin:.2em 0 .4em}
+article.story.big h3{font-size:1.5rem}
+article.story p{font-size:.94rem;color:var(--ink-2)}
+article.story .meta{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+
+/* 等級標記 —— 取代原本的 emoji,用報紙的旗標做法 */
+.flag{display:inline-block;font-size:.64rem;font-weight:800;letter-spacing:.12em;
+  text-transform:uppercase;padding:2px 7px;border:1px solid currentColor;
+  border-radius:2px;white-space:nowrap}
+.flag.l1,.flag.calm{color:var(--lv1)}
+.flag.l2,.flag.watch{color:var(--lv2)}
+.flag.l3,.flag.spike{color:var(--lv3)}
+.flag.l4,.flag.call{color:var(--lv4);background:var(--accent-soft)}
+
+/* ── 數據區塊 ───────────────────────────────────── */
+.figure{background:var(--paper);border:1px solid var(--rule);padding:14px 16px;
+  margin:16px 0}
+.figure .cap{font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:8px;font-weight:700}
+.stat-row{display:flex;flex-wrap:wrap;gap:8px 26px;align-items:flex-end}
+.stat{display:flex;flex-direction:column;gap:1px}
+.stat .k{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.stat .v{font-family:var(--mono);font-size:1.5rem;font-weight:700;line-height:1.1}
+.stat .v.sm{font-size:1.05rem}
+.delta{font-family:var(--mono);font-size:.78rem;font-weight:700}
+.delta.up{color:var(--up)} .delta.down{color:var(--down)} .delta.flat{color:var(--dim)}
+
+/* ── 表格 ───────────────────────────────────────── */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:460px}
+thead th{font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--dim);font-weight:800;text-align:left;
+  border-bottom:2px solid var(--rule-strong);padding:6px 10px}
+td{padding:7px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{text-align:right;font-family:var(--mono);white-space:nowrap}
+tr.group td{background:var(--paper);font-weight:700;border-bottom:1px solid var(--rule-strong)}
+tr.hl td{background:var(--accent-soft)}
+
+/* ── 引文 / 觀點 ────────────────────────────────── */
+.pullquote{font-family:var(--serif);font-size:1.16rem;line-height:1.5;
+  border-left:3px solid var(--accent);padding:2px 0 2px 18px;margin:18px 0;
+  color:var(--ink)}
+.pullquote .attr{display:block;font-family:var(--sans);font-size:.74rem;
+  letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+
+/* ── 邊欄清單 ───────────────────────────────────── */
+.briefs{list-style:none;padding:0;margin:0}
+.briefs li{border-bottom:1px solid var(--rule);padding:9px 0;font-size:.9rem}
+.briefs li:last-child{border-bottom:0}
+.briefs .when{font-family:var(--mono);font-size:.72rem;color:var(--dim);margin-right:6px}
+.briefs .why{display:block;color:var(--dim);font-size:.82rem;margin-top:2px}
+
+.note{font-size:.76rem;color:var(--dim);line-height:1.6;margin-top:8px;
+  padding-left:10px;border-left:2px solid var(--rule)}
+.dim{color:var(--dim)}
+.nowrap{white-space:nowrap}
+
+footer{border-top:3px double var(--rule-strong);margin-top:52px;padding-top:16px;
+  font-size:.74rem;color:var(--dim);line-height:1.7}
+
+@media (max-width:560px){
+  body{padding:0 14px 40px;font-size:15px}
+  .masthead{padding-top:20px}
+  .stat .v{font-size:1.25rem}
+}
+</style></head><body><header class="masthead"><div class="kicker">轟はじめ · ReGLOSS · 台灣活動</div><h1>順天時報 hololive版</h1></header><div class="dateline"><span>發布 <b>2026年11月23日 11:03(台北)</b></span><span>直播預訂 <b>1 筆</b></span><span>応援広告 <b>12 則</b></span><span>直播資料 <b>11/23 16:47</b></span><span>本輪成本 <b>$0.1780</b></span></div><div class="section-head"><span>即時快訊</span><span class="sub">最近 48 小時 · 新到舊</span></div><ul class="briefs"><li><span class="flag spike">值得注意</span> <b>【#白銀ノエル生誕祭2026】有通知!!拿不到90分以上會很尷尬...?!今年的生日派對是卡拉OK採分啊啊啊🎂✨【白銀ノエル/ホロライブ】</b> <a href="https://youtu.be/S9WBVmRt_h8" target="_blank" rel="noopener">[源]</a><br>白銀ノエル2026年生誕祭預告，將以卡拉OK採分方式舉辦生日派對。<span class="why">11/24 01:04（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【Original】Reverberate / 響咲リオナ【Official MV】</b> <a href="https://youtu.be/YnvABKEizsE" target="_blank" rel="noopener">[源]</a><br>這是響咲リオナ的官方MV預告，將於2026-11-23T09:30:06Z以直播形式播出。<span class="why">11/23 17:32（台北） · holodex</span></li><li><span class="flag call">重大</span> <b>【🔒男性限定】出道2個月，思考今後方針的說！【Hololive/熱千めら】</b> <a href="https://youtu.be/ERmu-UTxW_g" target="_blank" rel="noopener">[源]</a><br>這是熱千めら於2026年11月24日播出的男性限定預告直播。<span class="why">11/23 15:31（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【#白銀ノエル生誕倒數】大家一起迎接生日吧~🎉✨【白銀ノエル/ホロライブ】</b> <a href="https://youtu.be/w_bWduVfbK0" target="_blank" rel="noopener">[源]</a><br>這是白銀ノエル/ホロライブ的生日倒數預告。<span class="why">11/23 15:00（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【 #朝こよ 】迎接5周年的週二早晨也！朝こよ~!☀ #308 【博衣こより/hololive】</b> <a href="https://youtu.be/eUVIQNUkylo" target="_blank" rel="noopener">[源]</a><br>此為博衣こより/hololive的預告直播。<span class="why">11/23 02:57（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>在我心中，這仍然是我的生日 💙 | 會員限定</b> <a href="https://youtu.be/8lJA33qWFO0" target="_blank" rel="noopener">[源]</a><br>這是一則會員限定的預告。<span class="why">11/22 23:56（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【重大告知】自我3D中希望リオナ演唱的ホロメン原創曲點播時段✨【ホロライブ 響咲リオナ】</b> <a href="https://youtu.be/KM14kMDVaus" target="_blank" rel="noopener">[源]</a><br>這是預告於2026年11月23日播出的【ホロライブ 響咲リオナ】重大告知影片，內容為自我3D中希望リオナ演唱的ホロメン原創曲點播時段。<span class="why">11/22 23:26（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【#フミ様3D迷你直播】『スキ』一起！感謝大家🎉【 にじさんじフミ 】</b> <a href="https://youtu.be/12C3O30WtnM" target="_blank" rel="noopener">[源]</a><br>這是 にじさんじフミ 的3D迷你直播預告。<span class="why">11/22 21:55（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>奢華美食帶來的幸福時光😋【#FG2周年】</b> <a href="https://youtu.be/xdAl0QgGTms" target="_blank" rel="noopener">[源]</a><br>此影片已於2026-11-22T09:00:10Z播出。<span class="why">11/22 17:23（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【3D KARAOKE】和朋友一起玩樂！！【Nayuta Umbrage | FIRST STAGE PRODUCTION EN】</b> <a href="https://youtu.be/1xHz0cWPiQA" target="_blank" rel="noopener">[源]</a><br>這是預告的 3D 卡拉 OK 影片，與朋友一起玩樂。<span class="why">11/22 13:22（台北） · holodex</span></li><li><span class="flag call">重大</span> <b>Sakura Miko 2nd Live「Blooming Parade!!」&amp; 2nd Album「Blooming Cinderella」預告影片</b> <a href="https://youtu.be/ixStq4YsoEY" target="_blank" rel="noopener">[源]</a><br>Sakura Miko 2nd Live「Blooming Parade!!」與 2nd Album「Blooming Cinderella」的預告影片，已播出。<span class="why">11/22 04:50（台北） · holodex</span></li><li><span class="flag spike">值得注意</span> <b>【Nintendo Switch Sports Resort】還勉強是秋天?!3D off collab×BIG3來運動的秋天啊啊啊啊💪🔥【白銀ノエル/ホロライブ】</b> <a href="https://youtu.be/kP3DVAi_eXA" target="_blank" rel="noopener">[源]</a><br>這是白銀ノエル/ホロライブ於2026年11月22日播出的預告。<span class="why">11/22 02:19（台北） · holodex</span></li></ul><div class="section-head"><span>今日頭條</span><span class="sub">過去 24 小時的全局大事</span></div><ul class="briefs"><li><span class="flag call">重大</span> <b>さくらみこ直播突擊採訪粉絲 宣傳2nd Live</b> <a href="https://youtu.be/s5J6gnDSq_k" target="_blank" rel="noopener">[源]</a><br>さくらみこ於2026-11-22進行直播，內容包括對粉絲突擊採訪並宣傳其2nd Live “Blooming Parade!!”（已播出）<span class="why">さくらみこ的演唱會相關宣傳對全球hololive粉絲尤其是台灣觀眾有重要影響</span></li><li><span class="flag spike">值得注意</span> <b>響咲リオナ預告重大告知直播 討論3D原創曲請求</b> <a href="https://youtu.be/KM14kMDVaus" target="_blank" rel="noopener">[源]</a><br>響咲リオナ將於2026-11-23舉行重大告知直播，聚焦自製3D歌曲請求活動（預告）<span class="why">FLOW GLOW成員的重大活動對DEV_IS與ReGLOSS粉絲有直接關注價值</span></li><li><span class="flag spike">值得注意</span> <b>hololive FLOW GLOW舉行二周年慶祝直播</b> <a href="https://youtu.be/xdAl0QgGTms" target="_blank" rel="noopener">[源]</a><br>hololive FLOW GLOW成員進行二周年相關慶祝直播，分享至福時光（已播出）<span class="why">DEV_IS團體周年紀念對ReGLOSS與相關粉絲具特別意義</span></li><li><span class="flag spike">值得注意</span> <b>Nerissa Ravencroft會員限定直播慶祝生日</b> <a href="https://youtu.be/8lJA33qWFO0" target="_blank" rel="noopener">[源]</a><br>Nerissa Ravencroft進行會員限定直播，主題為「In my heart, it&#x27;s still my birthday」（已播出）<span class="why">hololive EN成員的會員活動對全球粉絲具吸引力</span></li><li><span class="flag watch">一般</span> <b>白銀ノエル與BIG3進行Switch Sports 3D collab</b> <a href="https://youtu.be/kP3DVAi_eXA" target="_blank" rel="noopener">[源]</a><br>白銀ノエル與BIG3成員進行Nintendo Switch Sports 3D合作直播（已播出）<span class="why">hololive JP成員的日常合作活動增添粉絲互動樂趣</span></li></ul><div class="note">過去24小時以hololive成員直播活動為主，未發現轟はじめ或台灣大型新活動的確認消息</div><div class="lead"><div class="byline"><span class="flag calm">無新消息</span><span>轟はじめ</span></div><h2>本日無新消息</h2><div class="tablewrap"><table style="min-width:480px"><thead><tr><th>狀態</th><th>台北時間</th><th>內容</th></tr></thead><tbody><tr><td class="nowrap"><span class="flag l2">預訂</span> </td><td class="nowrap"><b>11/23 20:00</b></td><td><a href="https://youtu.be/x0zIClrwtSw" target="_blank" rel="noopener">【】はいしんよてい!【轟はじめ/ReGLOSS】</a></td></tr></tbody></table></div><div class="note">直播資料更新於 2026年11月23日 16:47(台北)。每 30 分鐘檢查一次,有新預訂會即時刷新這一區並發 Telegram;其餘內容是每日彙整的結果。</div><p>過去24小時內，轟はじめ未有新直播、原創曲或周邊相關進展。最新直播為11月22日的脫毛沙龍模擬器遊戲實況。応援広告與台灣相關活動亦無她個人新訊息。</p><div class="section-head"><span>最近播過的</span></div><ul class="briefs"><li><span class="when">2026-11-22</span><a href="https://youtu.be/pTZIbKpvyLQ" target="_blank" rel="noopener">【脱毛サロンシミュレーター】照射してみたい!【轟はじめ/ReGLOSS】</a></li><li><span class="when">2026-11-21</span><a href="https://youtu.be/ywSD8JPhrdI" target="_blank" rel="noopener">【絶対遵守】ルール破ったらオワリ【轟はじめ/ReGLOSS】</a></li><li><span class="when">2026-11-20</span><a href="https://youtu.be/ZyV3OKUGP2o" target="_blank" rel="noopener">【気のせいすぎるRPG】ホラー要素ある??気のせい??【轟はじめ/ReGLOSS】</a></li><li><span class="when">2026-11-19</span><a href="https://youtu.be/sKNE1uaZtRs" target="_blank" rel="noopener">【】おしゃべりしよおお!!!【轟はじめ/ReGLOSS】</a></li><li><span class="when">2026-11-11</span><a href="https://youtu.be/CRHu7BtBQ6U" target="_blank" rel="noopener">タップダンス前にドカ食いするばんちょー【轟はじめ】 #shorts  #vtuber</a></li></ul></div><div class="section-head"><span>其他主題</span></div><div class="grid two"><article class="story"><div class="meta"><span class="flag spike">值得注意</span><span>ReGLOSS / DEV_IS</span></div><h3>FLOW GLOW二周年慶祝直播播出 響咲リオナ今晚重大告知</h3><p>過去24小時內，FLOW GLOW舉行二周年相關慶祝直播已播出，與ReGLOSS同屬DEV_IS的互動受關注。響咲リオナ預告今日晚間重大告知直播，將討論3D原創曲請求活動。ReGLOSS AR LIVE「X-ReCHORD」確定於11月29日舉辦，近期轟はじめ個人直播持續進行中。</p><ul class="briefs"><li><span class="flag l1">已發生</span> hololive FLOW GLOW舉行二周年慶祝直播 <span class="dim">[全球]</span> <a href="https://youtu.be/xdAl0QgGTms" target="_blank" rel="noopener">▸</a><span class="why">2026-11-22</span></li><li><span class="flag l3">預告</span> 響咲リオナ重大告知直播 討論3D原創曲請求 <span class="dim">[全球]</span> <a href="https://youtu.be/KM14kMDVaus" target="_blank" rel="noopener">▸</a><span class="why">2026-11-23</span></li><li><span class="flag l3">預告</span> FLOW GLOW收益化配信リレー <span class="dim">[全球]</span> <a href="https://x.com/hololivetv/status/1859529951139311925" target="_blank" rel="noopener">▸</a><span class="why">2026-11-23</span></li><li><span class="flag l3">預告</span> ReGLOSS AR LIVE「X-ReCHORD」 <span class="dim">[全球]</span> <a href="https://hololive.hololivepro.com/videos/9622/" target="_blank" rel="noopener">▸</a><span class="why">2026-11-29</span></li><li><span class="flag l1">已發生</span> 轟はじめ【脱毛サロンシミュレーター】直播 <span class="dim">[全球]</span><span class="why">2026-11-22</span></li></ul><ul class="briefs"><li><span class="flag l1">官方</span> <a href="https://x.com/hololivetv/status/1859529951139311925" target="_blank" rel="noopener">@hololivetv</a><span class="why">FLOW GLOW收益化配信リレー 11/23舉行</span></li></ul></article></div><div class="section-head"><span>無新消息</span></div><ul class="briefs"><li><span class="flag calm">無新消息</span> <b>hololive 台灣活動</b><span class="why">本日無新消息</span></li><li><span class="flag calm">無新消息</span> <b>全球活動</b><span class="why">本日無新消息</span></li><li><span class="flag calm">無新消息</span> <b>応援広告</b><span class="why">本日無新消息</span></li></ul><div class="section-head"><span>🇹🇼 台灣的応援広告</span><span class="sub">4 則</span></div><div class="tablewrap"><table style="min-width:640px"><thead><tr><th>タレント</th><th>広告名</th><th>場所</th><th>主催者</th><th>期間</th></tr></thead><tbody><tr><td class="nowrap"><b>ネリッサ・レイヴンクロフト</b></td><td>Nerissa Ravencroft 2026 birthday project</td><td class="nowrap">台北地下街</td><td class="dim nowrap">【Nerissa Ravencroft】魔音空域</td><td class="dim nowrap">2026年11月2日～2026年11月30日</td></tr><tr><td class="nowrap"><b>アクセル・シリオス</b></td><td>Axel Syrios Birthday Feast 2026</td><td class="nowrap">台北地下街</td><td class="dim nowrap">蠑螈熱炒店 / LIC.</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>風真いろは</b></td><td>風真いろは活動5周年記念応援広告</td><td class="nowrap">台北地下街</td><td class="dim nowrap">カキ君</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>Jurard T Rexford / Goldbullet / Octavio / Crimzon Ruze</b></td><td>HoloARMIS 3rd Anniversary Unofficial Underground Mall Lightbox Project</td><td class="nowrap">台北市中正区市民大道一段100号B1 N7ライトボックス</td><td class="dim nowrap">Akama</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr></tbody></table></div><div class="section-head"><span>ReGLOSS 全員排程</span></div><div class="tablewrap"><table style="min-width:480px"><thead><tr><th>狀態</th><th>台北時間</th><th>內容</th></tr></thead><tbody><tr><td class="nowrap"><span class="flag l2">預訂</span> </td><td class="nowrap"><b>11/23 20:00</b></td><td><a href="https://youtu.be/x0zIClrwtSw" target="_blank" rel="noopener">【】はいしんよてい!【轟はじめ/ReGLOSS】</a></td></tr></tbody></table></div><div class="section-head"><span>全部応援広告(節錄)</span><span class="sub">12 則</span></div><div class="tablewrap"><table style="min-width:640px"><thead><tr><th>タレント</th><th>広告名</th><th>場所</th><th>主催者</th><th>期間</th></tr></thead><tbody><tr><td class="nowrap"><b>AZKi</b></td><td>AZKi8周年応援広告企画</td><td class="nowrap">寒霞渓ロープウェイ こううん駅(香川県) / 湖屋カリー(鳥取県) / 道南いさりび鉄道 木古内駅(北海道) 阿武隈急行 車内(福島県・宮城県) / えちごトキめき鉄道 車内(新潟県・富山県) 伊豆箱根鉄道 三島駅(静岡県) / 平成筑豊鉄道 車内(福岡県)</td><td class="dim nowrap">旅するAZKi応援広告</td><td class="dim nowrap">2026年11月10日～2026年12月12日</td></tr><tr><td class="nowrap"><b>響咲リオナ / 虎金妃笑虎 / 水宮枢 / 輪堂千速 / 綺々羅々ヴィヴィ</b></td><td>FLOWGLOW 2周年記念応援広告</td><td class="nowrap">良才駅</td><td class="dim nowrap">みかん</td><td class="dim nowrap">2026年11月9日～2026年12月8日</td></tr><tr><td class="nowrap"><b>セシリア・イマーグリーン</b></td><td>Cecilia Immergreen Birthday Advertisement 2026</td><td class="nowrap">合井ディライトスクエア</td><td class="dim nowrap">Elenchus / エレンコス</td><td class="dim nowrap">2026年11月7日～2026年11月27日</td></tr><tr><td class="nowrap"><b>セシリア・イマーグリーン</b></td><td>Cecilia Immergreen Birthday Advertisement 2026</td><td class="nowrap">江南区庁駅</td><td class="dim nowrap">Elenchus / エレンコス</td><td class="dim nowrap">2026年11月6日～2026年12月6日</td></tr><tr><td class="nowrap"><b>ネリッサ・レイヴンクロフト</b></td><td>Nerissa Ravencroft 2026 birthday project</td><td class="nowrap">台北地下街</td><td class="dim nowrap">【Nerissa Ravencroft】魔音空域</td><td class="dim nowrap">2026年11月2日～2026年11月30日</td></tr><tr><td class="nowrap"><b>アクセル・シリオス</b></td><td>Axel Syrios Birthday Feast 2026</td><td class="nowrap">台北地下街</td><td class="dim nowrap">蠑螈熱炒店 / LIC.</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>AZKi / ラプラス・ダークネス / 鷹嶺ルイ / 博衣こより / 風真いろは / 沙花叉クロヱ</b></td><td>AZKi8周年 / 秘密結社holoX5周年応援広告 (東彩会広報部)</td><td class="nowrap">京王グループ西東京バス恩方営業所 路線バス車両内</td><td class="dim nowrap">東快紫苑</td><td class="dim nowrap">2026年11月1日～2026年12月6日</td></tr><tr><td class="nowrap"><b>風真いろは</b></td><td>風真いろは活動5周年記念応援広告</td><td class="nowrap">台北地下街</td><td class="dim nowrap">カキ君</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>AZKi</b></td><td>AZKi活動8周年記念地下鉄広告企画</td><td class="nowrap">良才駅</td><td class="dim nowrap">holostone</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>響咲リオナ</b></td><td>Isaki Riona 2nd Anniversary Support Advertisement</td><td class="nowrap">江南駅</td><td class="dim nowrap">響咲リオナ企画広報用アカウント</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>Jurard T Rexford / Goldbullet / Octavio / Crimzon Ruze</b></td><td>HoloARMIS 3rd Anniversary Unofficial Underground Mall Lightbox Project</td><td class="nowrap">台北市中正区市民大道一段100号B1 N7ライトボックス</td><td class="dim nowrap">Akama</td><td class="dim nowrap">2026年11月1日～2026年11月30日</td></tr><tr><td class="nowrap"><b>白銀ノエル</b></td><td>白銀ノエル2026年誕生日お祝い広告</td><td class="nowrap">江南駅</td><td class="dim nowrap">泣くジョーカー</td><td class="dim nowrap">2026年10月30日～2026年11月30日</td></tr></tbody></table></div><footer>由 holo-bot 自動產生 · Holodex(直播排程)· hololivepro.com 応援広告 · Grok(Venice API,含 X 搜尋)<br>Holodex 沒有排程推送的 WebSocket(那支 socket.io 是 TLdex 字幕中繼),所以採輪詢。待機枠通常提前數小時到數天開,不影響時效。</footer></body></html>
